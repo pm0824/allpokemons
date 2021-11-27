@@ -1,10 +1,12 @@
 import React from 'react'
 import './style.scss'
 
-const Pokemon = () => {
+const Pokemon = ({ pokemons }) => {
     return (
         <div className='container'>
-            Pokemon List
+            {pokemons.map(p => (
+                <div key={p.name}>{p.name}</div>
+            ))}
         </div>
     )
 }
