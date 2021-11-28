@@ -1,11 +1,12 @@
 import React from 'react'
 import './style.scss'
+import Card from '../layout/Card'
 
 const Pokemon = ({ pokemons }) => {
     return (
         <div className='container'>
             {pokemons.map(p => (
-                <div key={p.name}>{p.name}</div>
+                <Card className='grid-item' key={p.id} pokemon={p} />
             ))}
         </div>
     )
