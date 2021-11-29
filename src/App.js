@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { Fragment, useEffect, useState } from "react";
 import './App.scss'
 
+import Spinner from "./components/layout/Spinner";
 import Header from "./components/layout/Header";
 import Pokemon from "./components/pages/Pokemon";
 import Pagination from "./components/layout/Pagination";
@@ -48,7 +49,7 @@ function App() {
   return (
     <Fragment>
       <Header />
-      {loading ? (<h3>Loading...</h3>) : (
+      {loading ? (<Spinner />) : (
         <>
           <Pagination gotoNextPage={nextUrl ? gotoNextPage : null}
             gotoPrevPage={prevUrl ? gotoPrevPage : null}

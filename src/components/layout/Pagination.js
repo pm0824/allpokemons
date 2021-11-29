@@ -7,7 +7,7 @@ const Pagination = ({ gotoNextPage, gotoPrevPage }) => {
                 <button
                     className='pagination__btn'
                     onClick={gotoPrevPage}>
-                    PREVIOUS
+                    PREV
                 </button>}
             {gotoNextPage &&
                 <button
