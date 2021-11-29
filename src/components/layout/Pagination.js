@@ -2,9 +2,19 @@ import React from 'react'
 
 const Pagination = ({ gotoNextPage, gotoPrevPage }) => {
     return (
-        <div>
-            {gotoPrevPage && <button onClick={gotoPrevPage}>PREVIOUS</button>}
-            {gotoNextPage && <button onClick={gotoNextPage}>NEXT</button>}
+        <div className='pagination'>
+            {gotoPrevPage &&
+                <button
+                    className='pagination__btn'
+                    onClick={gotoPrevPage}>
+                    PREVIOUS
+                </button>}
+            {gotoNextPage &&
+                <button
+                    className='pagination__btn'
+                    onClick={gotoNextPage}>
+                    NEXT
+                </button>}
         </div>
     )
 }

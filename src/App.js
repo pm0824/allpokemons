@@ -50,10 +50,10 @@ function App() {
       <Header />
       {loading ? (<h3>Loading...</h3>) : (
         <>
-          <Pokemon pokemons={pokemons} />
           <Pagination gotoNextPage={nextUrl ? gotoNextPage : null}
             gotoPrevPage={prevUrl ? gotoPrevPage : null}
           />
+          <Pokemon pokemons={pokemons} />
         </>
       )}
     </Fragment>

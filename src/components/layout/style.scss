@@ -9,10 +9,60 @@
 	font-weight: 600;
 	font-size: 2.4rem;
 }
+
+.pagination {
+	margin: 2.5rem auto 0 auto;
+	text-align: center;
+	&__btn {
+		border: none;
+		margin: 0 0.3rem;
+		background-color: var(--color-primary-light);
+		padding: 0.4rem 0.8rem;
+		font-size: 1.6rem;
+		color: var(--color-grey-light-1);
+		cursor: pointer;
+	}
+}
+
 .card {
 	height: 25rem;
 	min-width: 20rem;
 	text-align: center;
 	background-color: var(--color-grey-light-2);
 	padding: 1rem;
+
+	&__title {
+		color: var(--color-grey-dark-1);
+		font-size: 1.8rem;
+	}
+
+	&__types {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&_type {
+			margin: 1rem 0.3rem;
+			padding: 0.5rem 1rem;
+			background-color: var(--color-primary-dark);
+			color: var(--color-grey-light-1);
+			border-radius: 0.5rem;
+			font-size: 1.6rem;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.6rem;
+
+		&_item {
+			margin-top: 0.8rem;
+		}
+	}
+}
+
+.card:hover {
+	box-shadow: var(--shadow-dark);
 }
